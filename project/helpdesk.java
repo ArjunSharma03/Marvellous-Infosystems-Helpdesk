@@ -72,8 +72,8 @@ class helpdesk extends Frame implements ActionListener {
         b1.addActionListener(this);
         add(b1);
 
-        //Runtime rs = Runtime.getRuntime();
-        //rs.exec("cmd /c java helpdesk2");
+        Runtime rs = Runtime.getRuntime();
+        rs.exec("cmd /c java helpdesk2");
         ss = new ServerSocket(2101);
         s = ss.accept();
         l.setText("Chat with Client");
